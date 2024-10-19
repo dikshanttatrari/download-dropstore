@@ -208,15 +208,18 @@ body::-webkit-scrollbar{
 
     #name{
         font-size:8vh;
+        transition: all 0.3s ease;
     }
 
     #name1{
         font-size:7vh;
         position: absolute;
+        transition: all 0.3s ease;
     }
     #name2{
         font-size: 7vh;
         position: absolute;
+        transition: all 0.3s ease;
 
     }
 
@@ -224,7 +227,7 @@ body::-webkit-scrollbar{
         position: absolute;
         width: 60%;
         z-index: 2;
-
+        transition: all 0.3s ease;
     }
 
 
