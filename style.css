@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    width: 100%;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.logo{
+    height: 7vh;
+    width: 10vw;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 2vh;
+    color: black
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+    list-style:  none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+}
+
+.download-btn{
+    background-color: #ffb700;
+    padding: 1vh 1vw;
+    border-radius: 50px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
+}
+
+.one{
+    background-color: #2582d8;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ss1{
+    position: absolute;
+    width: 20%;
+    z-index: 2;
+
+}
+
+#name{
+    font-size: 25vh;
+    color: white;
+    z-index: 2;
+}
+
+#name1{
+    font-size: 25vh;
+    position: absolute;
+    color: rgba(255,255,255,0.2);
+}
+
+#name2{
+    font-size: 25vh;
+    position: absolute;
+    color: rgba(255,255,255,0.2);
+}
+
+.two{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(37, 130, 216, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+#ss2 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 20%; 
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+.right{
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh
+}
+
+#heading1{
+    font-size: 3vw;
+    color: #ffd700;
+    font-weight: 900;
+}
+
+#para1{
+    font-size: 2.1vh;
+    color: white;
+    font-weight: 500;
+}
+
+.download-box-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#download-box{
+    background-color: #2582d8;
+    padding: 1vh 2vw;
+    height: 10vh;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#android-logo{
+    height: 5vh;
+    width: 15vh;
+}
+
+
+#download-text{
+    font-size: 2vh;
+    color: white;
+    font-weight: 500;
+}
+
+@media (min-width: 320px ) and (max-width: 480px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar{
+        width: 100vw;
+    }
+
+    .logo{
+        height: 7vh;
+        width: 40vw;
+    }
+
+    .download-btn{
+        padding: 1vh 2vw;
+        font-size: 2vh;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .one{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #name{
+        font-size:8vh;
+    }
+
+    #name1{
+        font-size:7vh;
+        position: absolute;
+    }
+    #name2{
+        font-size: 7vh;
+        position: absolute;
+
+    }
+
+    #ss1{
+        position: absolute;
+        width: 60%;
+        z-index: 2;
+
+    }
+
+
+    .two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    #ss2 {
+        width: 60vw; 
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+
+    }
+
+
+    .right{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh
+    }
+
+    #heading1{
+        font-size: 5vh;
+        color: #ffd700;
+        font-weight: 900;
+        text-align: center;
+
+    }
+
+    #para1{
+        font-size: 2.5vh;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .download-box-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    #download-box{
+        background-color: #2582d8;
+        padding: 1vh 2vw;
+        height: 10vh;
+        width: 80vw;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+    }
+
+    #android-logo{
+        height: 5vh;
+        width: 15vh;
+    }
+
+    #download-text{
+        font-size: 2.5vh;
+        color: white;
+        font-weight: 500;
+    }
+
+}
