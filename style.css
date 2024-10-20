@@ -9,6 +9,7 @@ html, body{
     height: 100vh;
     width: 100%;
     font-family: "Lexend Deca", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar{
@@ -149,6 +150,11 @@ body::-webkit-scrollbar{
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+}
+
+.download-box-container a{
+    text-decoration: none;
+    color: white;
 }
 
 #download-box{
